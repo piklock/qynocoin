@@ -119,11 +119,7 @@ public:
         assert(hashGenesisBlock == uint256("0x00000f854d72cc4a91e01b634a4900f28e533bb9100f37577208c1b1ca001a54"));
         assert(genesis.hashMerkleRoot == uint256("0xa4cdccfff9987c82ebf6815f12319fa6d132f343ba55a75f10d4f75a4f5417a9"));
 
-        vSeeds.push_back(CDNSSeedData("1", "seed1.qyno.org"));
-        vSeeds.push_back(CDNSSeedData("2", "seed2.qyno.org"));
-        vSeeds.push_back(CDNSSeedData("3", "seed3.qyno.org"));
-        vSeeds.push_back(CDNSSeedData("4", "seed4.qyno.org"));
-        vSeeds.push_back(CDNSSeedData("5", "seed5.qyno.org"));			
+		vSeeds.clear();	
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 78); // Qyno addresses start with 'Y'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 10); // Qyno script addresses start with '5'
@@ -197,10 +193,7 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("1", "seed1.qyno.org"));
-        vSeeds.push_back(CDNSSeedData("2", "seed2.qyno.org"));
-        vSeeds.push_back(CDNSSeedData("3", "seed3.qyno.org"));
-        vSeeds.push_back(CDNSSeedData("4", "seed4.qyno.org"));
+
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 127); // Testnet qyno addresses start with 't'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 20);  // Testnet qyno script addresses start with '9'
